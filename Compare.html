@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compare Laptops | SmartFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Smart<span>Finder</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#finder">Find Laptop</a>
+            <a href="Compare.html">Compare</a>
+            <a href="favorites.html">❤️ Favorites</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+    <section class="finder">
+        <div class="finder-box" style="width: 850px; max-width: 95%;">
+            <h2>⚖️ Compare Laptops</h2>
+            <div class="compare-inputs-container">
+                <div class="custom-dropdown" id="dropdown1">
+                    <div class="selected-value" onclick="toggleDropdown('list1')">
+                        Select Laptop 1 <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-list" id="list1"></div>
+                </div>
+                <div class="vs-circle">VS</div>
+                <div class="custom-dropdown" id="dropdown2">
+                    <div class="selected-value" onclick="toggleDropdown('list2')">
+                        Select Laptop 2 <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-list" id="list2"></div>
+                </div>
+            </div>
+            <input type="hidden" id="laptop1" value="">
+            <input type="hidden" id="laptop2" value="">
+            <button class="compare-btn" onclick="compare()">Start Comparison</button>
+            <div id="compareResult"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

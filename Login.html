@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Register | SmartFinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Smart<span>Finder</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#finder">Find Laptop</a>
+            <a href="Compare.html">Compare</a>
+            <a href="favorites.html">❤️ Favorites</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+    <div class="login-box" id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <p id="loginError" style="color: #ff4757; font-size: 14px; display: none; margin-bottom: 10px;"></p>
+        <button onclick="login()">Login</button>
+        <p style="margin-top: 15px; font-size: 14px; color: #bbb;">
+            Don't have an account? <span style="color: #6c5ce7; cursor: pointer; font-weight: bold;" onclick="toggleForms()">Sign Up</span>
+        </p>
+    </div>
+    <div class="login-box" id="registerForm" style="display: none;">
+        <h2>Create Account</h2>
+        <input type="text" id="regUsername" placeholder="Username">
+        <input type="password" id="regPassword" placeholder="Password">
+        <p id="regError" style="color: #ff4757; font-size: 14px; display: none; margin-bottom: 10px;"></p>
+        <p id="regSuccess" style="color: #2ed573; font-size: 14px; display: none; margin-bottom: 10px;"></p>
+        <button onclick="register()">Sign Up</button>
+        <p style="margin-top: 15px; font-size: 14px; color: #bbb;">
+            Already have an account? <span style="color: #6c5ce7; cursor: pointer; font-weight: bold;" onclick="toggleForms()">Login</span>
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

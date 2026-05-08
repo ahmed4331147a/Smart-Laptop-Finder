@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Laptops | SmartFinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            Smart<span>Finder</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#finder">Find Laptop</a>
+            <a href="Compare.html">Compare</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="favorites.html">❤️ Favorites</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+    <section class="finder">
+        <div class="finder-box" style="width: 850px; max-width: 95%;">
+            <h2>All Laptops</h2>
+            <div class="search-box">
+                <input type="text" id="filterInput" placeholder="🔍 Search by name, GPU, or type (e.g., gaming)...">
+            </div>
+            <div class="laptop-grid" id="allLaptops"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="laptops.js"></script>
+</body>
+</html>

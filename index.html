@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laptop Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            Smart<span>Finder</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#finder">Find Laptop</a>
+            <a href="Compare.html">Compare</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="favorites.html">❤️ Favorites</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header> 
+    <section class="slider-container">
+        <div class="slider">
+            <img src="images/1.jpg" class="slide active" alt="Smart Laptop Finder">
+            <img src="images/2.jpg.jpeg" class="slide" alt="Discover Your Perfect Fit">
+            <img src="images/3.jpg.jpeg" class="slide" alt="Powerful Gaming Rigs">
+            <img src="images/4.jpg.jpeg" class="slide" alt="Essentials for Study & Work">
+        </div>
+        <button class="prev-slide" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next-slide" onclick="changeSlide(1)">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="hero" id="hero">
+        <h1>Find Your Perfect Laptop</h1>
+        <p>Gaming • Programming • Study</p>
+        <button class="start-btn" onclick="location.href='#finder'">Start Finding</button>
+    </section>
+    <section class="finder" id="finder">
+        <div class="finder-box">
+            <h2>Find Your Perfect Laptop</h2>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search laptops...">
+            </div>
+            <div id="searchResults"></div>
+            <div class="usage">
+                <div class="option" data-type="gaming">🎮 Gaming</div>
+                <div class="option" data-type="programming">💻 Programming</div>
+                <div class="option" data-type="study">📚 Study</div>
+                <div class="option" data-type="design">🎨 Design</div>
+            </div>
+            <select id="budget">
+                <option value="">Select Budget</option>
+                <option value="low">Under $800</option>
+                <option value="medium">$800 - $1500</option>
+                <option value="high">Above $1500</option>
+            </select>
+            <button class="recommend-btn">Get Recommendation</button>
+            <div id="result"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
